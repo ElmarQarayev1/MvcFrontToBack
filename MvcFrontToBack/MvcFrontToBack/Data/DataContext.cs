@@ -1,24 +1,17 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using MvcFrontToBack.Data;
+﻿using System;
 using MvcFrontToBack.Models;
-using MvcFrontToBack.ViewModels;
 
-namespace MvcFrontToBack.Controllers;
-
-public class HomeController : Controller
+namespace MvcFrontToBack.Data
 {
-    List<Service> Services = new List<Service>();
-    List<Card> Cards = new List<Card>();
-    public HomeController()
-    {
-        Cards = new List<Card>()
-        {
-             new Card
-             {
-                 Id=1,
-                 Name="isler",
-                 Description="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+	public class DataContext
+	{
+		public List<Card> Cards = new List<Card>()
+		{
+			 new Card
+			 {
+				 Id=1,
+				 Name="isler",
+				 Description="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
 
              },
              new Card
@@ -51,14 +44,14 @@ public class HomeController : Controller
              },
              new Card
              {
-                 Id=6,
+                 Id=5,
                  Name="is birlikleri",
                  Description="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
 
              },
         };
-        Services = new List<Service>()
-           {
+        public List<Service> Services = new List<Service>()
+        {
              new Service
              {
                  Id=1,
@@ -80,14 +73,10 @@ public class HomeController : Controller
                  Description="Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
 
              },
+
+
         };
-        
-}
-    public IActionResult Index()
-    {
-        HomeViewModel hv = new HomeViewModel();
-        hv.Services = Services;
-        hv.Cards = Cards;
-       return View(hv);
+
     }
 }
+

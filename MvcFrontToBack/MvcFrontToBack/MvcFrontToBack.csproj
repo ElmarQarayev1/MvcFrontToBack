@@ -12,12 +12,16 @@
     <None Remove="Models\" />
     <None Remove="Views\About\" />
     <None Remove="Views\Team\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\About\" />
     <Folder Include="wwwroot\assets\img\" />
     <Folder Include="Views\Team\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\img\" />
