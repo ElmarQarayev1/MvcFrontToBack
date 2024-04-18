@@ -76,6 +76,32 @@ namespace MvcFrontToBack.Data
 
 
         };
+        public List<Team> Teams = new List<Team>()
+        {
+            new Team
+            {
+                Id=1,
+                Name="lady ibrahim",
+                ShortDescription="telebe",
+                LongDescription="universitet telebesi"
+            },
+            new Team
+            {
+                Id=2,
+                Name="bigLady ibrahim",
+                ShortDescription="telebe",
+                LongDescription="universitet telebesi"
+            },
+            new Team
+            {
+                Id = 3,
+                Name = "xanim ibrahim",
+                ShortDescription = "telebe",
+                LongDescription = "universitet telebesi"
+            }
+        };
+       
+
 
     }
 }
