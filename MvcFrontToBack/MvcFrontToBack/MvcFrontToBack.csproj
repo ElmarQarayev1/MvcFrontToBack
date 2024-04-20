@@ -14,6 +14,7 @@
     <None Remove="Views\Team\" />
     <None Remove="ViewModels\" />
     <None Remove="Data\" />
+    <None Remove="Views\Portfolio\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -22,8 +23,17 @@
     <Folder Include="Views\Team\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Data\" />
+    <Folder Include="Views\Portfolio\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.18" />
   </ItemGroup>
 </Project>
