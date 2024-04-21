@@ -18,7 +18,10 @@ public class HomeController : Controller
     {
         HomeViewModel hv = new HomeViewModel()
         {
-            Features = _context.Features.ToList()
+            Features = _context.Features.ToList(),
+            Services=_context.Services.ToList(),
+            Clients=_context.Clients.ToList(),
+            Slides=_context.Slides.OrderByDescending(x=>x.Order).ToList()
         };
        return View(hv);
     }

@@ -18,5 +18,7 @@ namespace MvcFrontToBack.Data
 		public DbSet<Service> Services { get; set; }
 		public DbSet<Team> Teams { get; set; }
 		public DbSet<TeamIcon> TeamIcons { get; set; }
+		public DbSet<Client> Clients { get; set; }
+		public DbSet<Slide> Slides { get; set; }
 	}
 }
