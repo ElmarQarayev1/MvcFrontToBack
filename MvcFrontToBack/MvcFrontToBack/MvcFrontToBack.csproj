@@ -16,6 +16,7 @@
     <None Remove="Data\" />
     <None Remove="Views\Portfolio\" />
     <None Remove="Views\Service\" />
+    <None Remove="Views\PortfolioDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -26,6 +27,7 @@
     <Folder Include="Data\" />
     <Folder Include="Views\Portfolio\" />
     <Folder Include="Views\Service\" />
+    <Folder Include="Views\PortfolioDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\img\" />

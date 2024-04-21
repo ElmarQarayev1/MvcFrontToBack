@@ -12,20 +12,15 @@ namespace MvcFrontToBack.Controllers
 		public PortfolioController(AppDbContext context)
 		{
 			_context = context;
-
 		}
-
 		public IActionResult Index()
 		{
 			PortfolioViewModel pv = new PortfolioViewModel()
 			{
 				Categories = _context.Categories.ToList(),
                 Projects = _context.Projects.Include(x => x.Category).Include(x => x.ProjectImages).ToList()
-
             };
 			return View(pv);
 		}
-		
 	}
 }
-
