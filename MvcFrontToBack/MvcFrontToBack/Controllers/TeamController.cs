@@ -16,7 +16,7 @@ namespace MvcFrontToBack.Controllers
         }
 		public IActionResult Index()
 		{
-			var elem = _context.Teams.Include(x => x.TeamIcons).ToList();
+		    var elem = _context.Teams.Include(x => x.TeamIcons).ToList();
 			return View(elem);
 		}
 	}
